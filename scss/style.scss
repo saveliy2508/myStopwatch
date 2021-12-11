@@ -1,0 +1,62 @@
+@import "_null";
+
+.num {
+    width: 170px;
+    text-align: right;
+}
+
+.before-number{
+    &::before {
+        content: '0';
+    }
+}
+
+.wrapper {
+    max-width: 700px;
+    min-width: 550px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    .choice {
+        button {
+            display: block;
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        padding-top: 50px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .stopwatch{
+        .stopwatch__function {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 15px;
+            button {
+                display: block;
+                width: 120px;
+                height: 30px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+        }
+        .stopwatch__numbers {
+            display: flex;
+            justify-content: space-around;
+            font-size: 150px;
+        }
+        .stopwatch__lap-list {
+            max-width: 700px;
+            font-size: 24px;
+            margin: 30px 0;
+            max-height: 150px;
+            padding-top: 10px;
+            overflow: auto;
+            .stopwatch__li {
+                display: block;
+            }
+        }
+    }
+}

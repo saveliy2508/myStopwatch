@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Stopwatch</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <div class="choice">
+         <button class="choice__stopwatch">STOPWATCH</button>
+         <button class="choice__timer">TIMER</button>
+      </div>
+      <div class="stopwatch">
+         <div class="stopwatch__function">
+            <button class="stopwatch__start">Start</button>
+            <button class="stopwatch__pause" disabled>Pause</button>
+            <button class="stopwatch__restart">Restart</button>
+            <button class="stopwatch__lap">Lap</button>
+            <button class="stopwatch__clear-laps">Clear Laps</button>
+         </div>
+         <div class="stopwatch__numbers">
+            <div class="stopwatch__minutes num">00</div>
+            <div class="stopwatch__colon-one">:</div>
+            <div class="stopwatch__seconds num">00</div>
+            <div class="stopwatch__colon-two">:</div>
+            <div class="stopwatch__milliseconds num">00</div>
+         </div>
+         <ul class="stopwatch__lap-list">
+
+         </ul>
+      </div>
+   </div>
+
+   <script src="js/index.js"></script>
+</body>
+
+</html>

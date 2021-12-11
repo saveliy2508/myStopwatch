@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.num {
+  width: 170px;
+  text-align: right;
+}
+
+.before-number::before {
+  content: '0';
+}
+
+.wrapper {
+  max-width: 700px;
+  min-width: 550px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper .choice {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper .choice button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.wrapper .stopwatch .stopwatch__function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 15px;
+}
+
+.wrapper .stopwatch .stopwatch__function button {
+  display: block;
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.wrapper .stopwatch .stopwatch__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 150px;
+}
+
+.wrapper .stopwatch .stopwatch__lap-list {
+  max-width: 700px;
+  font-size: 24px;
+  margin: 30px 0;
+  max-height: 150px;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+.wrapper .stopwatch .stopwatch__lap-list .stopwatch__li {
+  display: block;
+}
